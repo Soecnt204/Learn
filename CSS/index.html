@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        /* universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* elementor selector */
+        header {
+            color: aqua;
+        }
+        /* class selector with inline css*/
+        .cselect {
+            color: black;
+        }
+        /* id selecor */
+        #idselect {
+            color: blueviolet;
+        }
+        /* psedu selector */
+        a:visited { 
+            background-color: blue;
+        }
+        A:hover { 
+            background-color: red;
+        }
+
+        A:visited {
+            background-color: darkkhaki;
+        }
+        a:active {
+            background-color: rgb(255, 0, 162);
+        }
+        /* child selector */
+        header > p {
+            background-color: red;
+        }
+        /* desend selector */
+        header p {
+            background-color: blue;
+        }
+         /* first child selector */
+         a:first-child {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <article>
+      <p>hello you</p>
+    </article>
+        <h1>hello world</h1>
+        <h2 class="cselect">hello world</h2>
+    </header>
+    <main id="idselect">
+        <p>helo world</p>
+    </main>
+    <footer>
+        <a href="https://www.google.com">Google</a>
+        <a href="https://www.bekaarfilms.com">Google</a>
+    </footer>
+</body>
+</html>
